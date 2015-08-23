@@ -1,33 +1,19 @@
-# getting_and_cleaning_data_tidy_data
-Coursera Getting and Cleanning Data Course Project
+# Coursera Getting and Cleanning Data Course Project
 
-##Performs the steps for completing Coursera Getting & Cleaning Data Course Project
+##Introduction
+This repository contains my work for the Coursera Data Science: Getting and Cleaning Data course.
 
-##Step 1: Merges the training and the test sets to create one data set.
+##About the Data
+The raw data can be found in the x_test.txt file. This file does not contain headers or descriptors for the data. The y_test.txt file contains activity labels and the subject_test.txt file contains the test subjects. 
 
-	##first pull in all test set files as tables
-	##combine activities and results into a single table and rename columns
-	##repeat the same steps used for creating test_results table for the training data
-	##merge the training and test datasets together
+There is test data and training data. The training data files have the same structure as the test data files. 
 
-##Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
+##About the code
+The run_analysis.R code will merge the testing and training sets to create one tidy data set by completing the following steps:
+*Step 1: Merges the training and the test sets to create one data set.
+*Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
+*Step 3: Uses descriptive activity names to name the activities in the data set
+*Step 4: Appropriately labels the data set with descriptive variable names. 
+*Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-	## Read in column names from the features document
-	## Identify column names representing means and stds
-	##select required columns from the dataset
-
-##Step 3: Uses descriptive activity names to name the activities in the data set
-
-	##read in the activity lables from the provided text file
-	##replace acitivity ids with the activity name
-
-##Step 4: Appropriately labels the data set with descriptive variable names. 
-
-	##select the column names from the previously determined columns contains mean and std data (identified in step 2)
-	##assign column header names to appropriate column
-
-##Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-	#aggregate the data by activity and subject id and then take the mean
-
-
-##Write data to file "tidy_summary_data_file.txt"
+The final tidy data set is contains in the "tidy_summary_data_file.txt" file.
